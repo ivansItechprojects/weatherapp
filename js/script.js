@@ -4,7 +4,7 @@
   const preloader = document.querySelector(".preloader");
   setTimeout(function() {
     preloader.style.display = "none";
-  }, 4000);
+  }, 4500);
 
   document.addEventListener("DOMContentLoaded", function() {
     //Variables
