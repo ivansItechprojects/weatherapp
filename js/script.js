@@ -39,7 +39,7 @@
         success: function(result) {
           cityName.innerHTML = result.name + ", ";
           countryName.innerHTML = result.sys.country;
-          var curTempC = Math.round(result.main.temp * 10) / 10;
+          let curTempC = Math.round(result.main.temp * 10) / 10;
           temperature.innerHTML =
             curTempC + " " + String.fromCharCode(176) + "C";
           humidity.innerHTML = result.main.humidity + "%";
@@ -49,11 +49,11 @@
     }
 
     function clock() {
-      var now = new Date();
-      var TwentyFourHour = now.getHours();
-      var hour = now.getHours();
-      var min = now.getMinutes();
-      var mid = "pm";
+      let now = new Date();
+      let TwentyFourHour = now.getHours();
+      let hour = now.getHours();
+      let min = now.getMinutes();
+      let mid = "pm";
       if (min < 10) {
         min = "0" + min;
       }
