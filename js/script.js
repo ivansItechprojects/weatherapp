@@ -47,7 +47,7 @@
         }
       });
     }
-
+    clock();
     function clock() {
       let now = new Date();
       let TwentyFourHour = now.getHours();
@@ -69,6 +69,6 @@
       document.querySelector("time").innerHTML = hour + ":" + min + mid;
       setTimeout(clock, 1000);
     }
-    clock();
+   
   });
 })();
