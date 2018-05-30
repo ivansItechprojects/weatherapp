@@ -1,0 +1,22 @@
+@mixin centerthingsposabs {
+    position: absolute;
+    top: 0;
+    right: 0;
+	left: 0;
+	text-align: center;
+}
+
+@mixin boxshadowforappbg {
+    -webkit-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin appbg {
+    background: $mainappbg;
+    margin: 9% auto;
+    width: $appbgwidth;
+    height: $appbgheight;
+    @include boxshadowforappbg;
+    @include centerthingsposabs;
+}

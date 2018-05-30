@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="css/rwd.css">
     <title>Weather App</title>
 </head>
 
@@ -52,7 +53,6 @@
         <p class="ballTextApp line-1 anim-typewriter">loading weather
             <br/> app please wait ;-)</p>
     </div>
-
     <div id="clouds">
         <div class="cloud x1"></div>
         <div class="cloud x2"></div>
@@ -61,18 +61,31 @@
         <div class="cloud x5"></div>
         <div class="cloud x6"></div>
         <div class="cloud x7"></div>
-        <div class="appContent">
-            <div class="app">
+        <div class="appContent grid-x">
+            <div class="app cell small-10 medium-10 large-5">
                 <h1>Local Weather</h1>
-                <img src="img/sunico.jpg" alt=""><br/>
-                <strong>Aktualne miejsce:</strong><span class="cityName"></span><br/>
-                <strong>Aktualny kraj:</strong><span class="countryName"></span><br/>
-                <strong>Aktualna tempateratura:</strong><span class="temperature"><br/>
+                <img class="sunimage" src="img/sunico.jpg" alt="">
+                <br/>
+                <strong>Aktualne miejsce: </strong>
+                <span class="cityName"></span>
+                <br/>
+                <strong>Aktualny kraj: </strong>
+                <span class="countryName"></span>
+                <br/>
+                <strong>Aktualna tempateratura: </strong>
+                <span class="temperature">
+                    <br/>
                     <span class="temperatureUnit"></span>
-                </span><br/>
-                <strong>Wilgotność powietrza:</strong><span id="humidity"></span><br/>
-                <strong>Przejrzystość nieba:</strong>   <span id="sky"></span><br/>
-                <strong>Aktualna godzina:</strong><span id="time">15:00</span>
+                </span>
+                <br/>
+                <strong>Wilgotność powietrza: </strong>
+                <span id="humidity"></span>
+                <br/>
+                <strong>Przejrzystość nieba: </strong>
+                <span id="sky"></span>
+                <br/>
+                <strong>Aktualna godzina: </strong>
+                <span id="time">15:00</span>
             </div>
         </div>
     </div>

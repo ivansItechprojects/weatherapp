@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 body {
   background: #efefef;
 }
@@ -137,7 +138,6 @@ path {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=preloder.css.map */
 .line-1 {
   position: relative;
   top: 0%;
@@ -148,6 +148,8 @@ path {
   white-space: nowrap;
   overflow: hidden;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* Animation */
@@ -171,66 +173,6 @@ path {
     border-right-color: transparent;
   }
 }
-.app {
-  background: #fff;
-  margin: 9% auto;
-  width: 50%;
-  height: 600px;
-  -webkit-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-
-.app h1 {
-  margin-top: 15%;
-}
-
-.whole {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 17% 0 0 0;
-}
-
-.preloader {
-  z-index: 9999;
-  position: absolute;
-  background: #fff;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: 0 auto;
-}
-
-.rain {
-  margin-top: 70px;
-}
-
-#sun {
-  left: 50%;
-  top: 35%;
-}
-
-/*Lets start with the cloud formation rather*/
-/*The container will also serve as the SKY*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  /*To hide the horizontal scroller appearing during the animation*/
-  overflow: hidden;
-}
-
 #clouds {
   padding: 30% 0;
   background: #2980b9;
@@ -327,7 +269,7 @@ body {
 }
 
 .x5 {
-  left: -150px;
+  left: 120px;
   top: -150px;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -340,8 +282,8 @@ body {
 }
 
 .x6 {
-  left: -150px;
-  top: -150px;
+  left: 170px;
+  top: -1px;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -388,4 +330,67 @@ body {
   100% {
     margin-left: -1000px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app {
+  background: #ffff;
+  margin: 9% auto;
+  width: 36%;
+  height: 560px;
+  -webkit-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 7px 21px 0px rgba(50, 50, 50, 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.app h1 {
+  margin: 10% 0 3% 0;
+}
+
+.sunimage {
+  margin: 20px 0 21px 0;
+}
+
+.whole {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 17% 0 0 0;
+}
+
+.preloader {
+  z-index: 9999;
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.rain {
+  margin-top: 70px;
+  margin-left: 0px;
+}
+
+#sun {
+  left: 50%;
+  top: 35%;
 }
