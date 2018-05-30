@@ -29,15 +29,7 @@ path {
 }
 
 #sun {
-    margin-left: -10px;
-    margin-top: 6px;
-    opacity: 0;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 45px;
-    top: 15px;
-    z-index: 1;
+    @include sunSettingPosition;
     animation-name: rotate;
     animation-duration: 16000ms;
     animation-iteration-count: infinite;

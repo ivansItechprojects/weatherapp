@@ -141,8 +141,8 @@ path {
 #clouds {
   padding: 30% 0;
   background: #2980b9;
-  background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); }
+  background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #fff);
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #fff); }
 
 /*Time to finalise the cloud shape*/
 .cloud {
@@ -159,8 +159,8 @@ path {
   content: '';
   position: absolute;
   background: #fff;
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  height: 100px;
   position: absolute;
   top: -15px;
   left: 10px;

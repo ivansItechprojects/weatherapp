@@ -1,14 +1,17 @@
+@import './scss/helpers/__colors'; 
+@import './scss/modules/__mixins';
+@import './scss/modules/__variables'; 
+
 #clouds {
     padding: 30% 0;
-    background: #2980b9;
-    background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    background: $bgcloudcolorbasic;
+    background: -webkit-linear-gradient(to right, $bgcloudcolorbasic, $lightBlueColor, $whiteColor);
+    background: linear-gradient(to right, $bgcloudcolorbasic, $lightBlueColor, $whiteColor);
 }
 /*Time to finalise the cloud shape*/
 .cloud {
-    width: 200px;
-    height: 60px;
-    background: #fff;
+    @include cloudDimension;
+    background:$clodBackgroundSetting;
     border-radius: 200px;
     -moz-border-radius: 200px;
     -webkit-border-radius: 200px;
@@ -19,9 +22,8 @@
 .cloud:after {
     content: '';
     position: absolute;
-    background: #fff;
-    width: 100px;
-    height: 80px;
+    background:$whiteColor;
+   @include afterCloudSettingDimensions;
     position: absolute;
     top: -15px;
     left: 10px;
