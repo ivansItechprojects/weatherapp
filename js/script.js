@@ -66,7 +66,7 @@
       if (TwentyFourHour < 12) {
         mid = "am";
       }
-      document.getElementById("time").innerHTML = hour + ":" + min + mid;
+      document.querySelector("time").innerHTML = hour + ":" + min + mid;
       setTimeout(clock, 1000);
     }
     clock();
